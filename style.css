@@ -1,4 +1,6 @@
-*{box-sizing:border-box}
+*{
+  box-sizing:border-box
+}
 
 :root{
   --bg:#11110f;
@@ -13,7 +15,7 @@ html{
 
 body{
   margin:0;
-  background:#11110f;
+  background:var(--bg);
   color:var(--text);
   font-family:Arial,Helvetica,sans-serif;
   line-height:1.5
@@ -23,6 +25,11 @@ a{
   color:inherit;
   text-decoration:none
 }
+
+
+/* =========================
+   HEADER
+   ========================= */
 
 .site-header{
   position:sticky;
@@ -36,7 +43,8 @@ a{
   border-bottom:1px solid var(--line)
 }
 
-.brand,.footer-brand{
+.brand,
+.footer-brand{
   font-size:1.35rem;
   font-weight:900
 }
@@ -50,6 +58,10 @@ a{
 
 .main-nav a{
   color:var(--muted)
+}
+
+.main-nav a:hover{
+  color:var(--text)
 }
 
 .menu-toggle{
@@ -66,6 +78,11 @@ a{
   background:var(--text)
 }
 
+
+/* =========================
+   STRUTTURA GENERALE
+   ========================= */
+
 .section{
   width:min(1180px,90vw);
   margin:0 auto;
@@ -73,21 +90,17 @@ a{
   border-bottom:1px solid var(--line)
 }
 
-.hero{
-  min-height:78vh;
-  display:grid;
-  grid-template-columns:1.35fr .65fr;
-  gap:7vw;
-  align-items:center
-}
-
-.eyebrow,.section-label{
+.eyebrow,
+.section-label{
   font-size:.72rem;
   letter-spacing:.18em;
   color:var(--muted)
 }
 
-h1,h2,h3,p{
+h1,
+h2,
+h3,
+p{
   margin-top:0
 }
 
@@ -111,6 +124,27 @@ h2{
   color:var(--muted)
 }
 
+.section-heading{
+  display:flex;
+  align-items:end;
+  justify-content:space-between;
+  gap:30px;
+  margin-bottom:40px
+}
+
+
+/* =========================
+   HERO
+   ========================= */
+
+.hero{
+  min-height:78vh;
+  display:grid;
+  grid-template-columns:1.35fr .65fr;
+  gap:7vw;
+  align-items:center
+}
+
 .hero-actions{
   display:flex;
   flex-wrap:wrap;
@@ -130,7 +164,13 @@ h2{
   color:var(--bg)
 }
 
-/* Logo ufficiale CZS nella hero */
+.btn:hover{
+  opacity:.72
+}
+
+
+/* Logo ufficiale CZS */
+
 .hero-logo{
   display:flex;
   align-items:center;
@@ -139,14 +179,16 @@ h2{
 }
 
 .hero-logo img{
-  width:min(100%,300px);
+  width:min(100%,280px);
   height:auto;
   display:block;
   object-fit:contain
 }
 
 
-/* ABOUT */
+/* =========================
+   CHI SIAMO
+   ========================= */
 
 .about-grid,
 .links-layout{
@@ -156,18 +198,9 @@ h2{
 }
 
 
-/* SECTION HEADINGS */
-
-.section-heading{
-  display:flex;
-  align-items:end;
-  justify-content:space-between;
-  gap:30px;
-  margin-bottom:40px
-}
-
-
-/* BEHIND THE PAWZ */
+/* =========================
+   BEHIND THE PAWZ
+   ========================= */
 
 .mastermind-grid{
   display:grid;
@@ -190,16 +223,6 @@ h2{
   object-fit:cover
 }
 
-.mastermind-photo.placeholder{
-  min-height:420px
-}
-
-.mastermind-photo.placeholder span{
-  font-size:clamp(3rem,8vw,6rem);
-  font-weight:900;
-  opacity:.3
-}
-
 .mastermind-copy{
   max-width:650px
 }
@@ -218,7 +241,9 @@ h2{
 }
 
 
-/* CREW */
+/* =========================
+   CREW
+   ========================= */
 
 .crew-grid{
   display:grid;
@@ -228,9 +253,9 @@ h2{
 }
 
 .member-card{
-  border-top:1px solid var(--line);
+  width:100%;
   padding-top:14px;
-  width:100%
+  border-top:1px solid var(--line)
 }
 
 .member-photo{
@@ -240,7 +265,9 @@ h2{
   overflow:hidden
 }
 
+
 /* Ritratti ufficiali CZS */
+
 .member-photo img{
   width:100%;
   height:100%;
@@ -285,17 +312,21 @@ h2{
 }
 
 
-/* RELEASES */
+/* =========================
+   DISCOGRAFIA
+   ========================= */
 
 .release-grid{
   display:grid;
   grid-template-columns:repeat(3,minmax(0,1fr));
-  gap:54px 30px
+  gap:58px 30px
 }
 
 .release-card{
-  border-top:1px solid var(--line);
-  padding-top:14px
+  display:flex;
+  flex-direction:column;
+  padding-top:14px;
+  border-top:1px solid var(--line)
 }
 
 .cover{
@@ -333,6 +364,7 @@ h2{
 .release-card h3{
   margin-bottom:3px;
   font-size:1rem;
+  line-height:1.25;
   text-transform:uppercase
 }
 
@@ -350,10 +382,14 @@ h2{
   line-height:1.55
 }
 
+
+/* Link ascolto */
+
 .release-streaming{
   display:flex;
   flex-wrap:wrap;
   gap:8px 14px;
+  margin-top:auto;
   padding-top:14px;
   border-top:1px solid var(--line)
 }
@@ -378,7 +414,31 @@ h2{
 }
 
 
-/* SOCIAL LINKS */
+/* Future releases */
+
+.release-coming{
+  margin-top:auto;
+  padding-top:14px;
+  border-top:1px solid var(--line);
+  color:var(--text);
+  font-size:.72rem;
+  font-weight:900;
+  letter-spacing:.18em
+}
+
+.future-release .release-number{
+  opacity:.72
+}
+
+.future-release .release-coming::before{
+  content:"• ";
+  color:var(--muted)
+}
+
+
+/* =========================
+   SOCIAL
+   ========================= */
 
 .social-links{
   border-top:1px solid var(--line)
@@ -392,8 +452,14 @@ h2{
   font-size:clamp(1.1rem,3vw,2.2rem)
 }
 
+.social-links a:hover{
+  color:var(--muted)
+}
 
-/* FOOTER */
+
+/* =========================
+   FOOTER
+   ========================= */
 
 footer{
   width:min(1180px,90vw);
@@ -407,7 +473,9 @@ footer{
 }
 
 
-/* REVEAL */
+/* =========================
+   ANIMAZIONI
+   ========================= */
 
 .reveal{
   opacity:0;
@@ -421,7 +489,9 @@ footer{
 }
 
 
-/* TABLET */
+/* =========================
+   TABLET
+   ========================= */
 
 @media(max-width:900px){
 
@@ -437,7 +507,7 @@ footer{
   }
 
   .hero-logo img{
-    width:min(58vw,380px)
+    width:min(58vw,360px)
   }
 
   .mastermind-grid{
@@ -454,7 +524,8 @@ footer{
   }
 
   .release-grid{
-    grid-template-columns:repeat(2,1fr)
+    grid-template-columns:repeat(2,1fr);
+    gap:48px 24px
   }
 
   .release-description{
@@ -464,7 +535,9 @@ footer{
 }
 
 
-/* SMARTPHONE */
+/* =========================
+   SMARTPHONE
+   ========================= */
 
 @media(max-width:680px){
 
