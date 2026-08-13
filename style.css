@@ -127,24 +127,19 @@ h2{
   color:var(--bg)
 }
 
-.hero-mark{
-  aspect-ratio:1;
-  display:grid;
-  place-items:center;
-  align-content:center;
-  border:1px solid var(--line);
-  border-radius:50%;
-  text-align:center;
-  transform:rotate(-4deg)
+/* Logo ufficiale CZS nella hero */
+.hero-logo{
+  display:flex;
+  align-items:center;
+  justify-content:center;
+  width:100%
 }
 
-.paw{
-  font-size:clamp(3rem,8vw,7rem)
-}
-
-.hero-mark-text{
-  font-size:clamp(3rem,7vw,6rem);
-  font-weight:900
+.hero-logo img{
+  width:min(100%,460px);
+  height:auto;
+  display:block;
+  object-fit:contain
 }
 
 .about-grid,.links-layout{
@@ -307,6 +302,14 @@ footer{
     grid-template-columns:1fr
   }
 
+  .hero-logo{
+    margin-top:20px
+  }
+
+  .hero-logo img{
+    width:min(72vw,420px)
+  }
+
   .release-grid{
     grid-template-columns:repeat(2,1fr)
   }
@@ -338,6 +341,10 @@ footer{
 
   .member-info{
     grid-template-columns:1fr
+  }
+
+  .hero-logo img{
+    width:min(78vw,360px)
   }
 
   .section{
