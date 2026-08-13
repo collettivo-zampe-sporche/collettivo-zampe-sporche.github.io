@@ -2,8 +2,6 @@
 
 Aggiornamenti principali:
 - inserite tutte le bio web approvate;
-- Otello corretto come R&B / Soul;
-- Bruce separato come Special Guest / Extended Family;
 - mantenuta la struttura responsive della V1.
 
 Prossimi step:
