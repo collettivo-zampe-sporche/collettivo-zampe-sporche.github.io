@@ -15,13 +15,6 @@
   - Instagram
   - YouTube
 
-- [ ] Completare i ritratti mancanti:
-  - Dante
-  - Otello
-  - Bruce
-
-- [ ] Valutare un nuovo ritratto di Zack
-  - L'espressione del ritratto attuale convince meno rispetto agli altri membri.
 
 
 ### DA VALUTARE
@@ -35,23 +28,6 @@
     - ULTIME DAL COLLETTIVO
 
 
-## RELEASES
-
-### Disponibili al lancio del sito
-
-- #01 — PWA — Paws With Attitude
-- #02 — 9 Vite
-- #03 — Non sono una gatta morta
-- #04 — Fuori per pessima condotta
-- #05 — Più cibo per me [Single]
-- #06 — Nove vite dopo [Single]
-- #07 — Giù le zampe dal Collettivo
-
-### Coming Soon
-
-- #08 — Country Life
-- #09 — La gatta che amava la synthwave
-- #10 — All Pawz On Me
 
 
 ## STATO SITO
