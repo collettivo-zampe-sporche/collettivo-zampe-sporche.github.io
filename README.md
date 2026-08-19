@@ -2,6 +2,8 @@
 
 ## TO DO
 
+TOGLIERE "hidden" dall'index per ogni release.
+
 - [ ] Inserire i link streaming per tutte le release disponibili:
   - Giù le zampe dal Collettivo
   - Cattive abitudini
