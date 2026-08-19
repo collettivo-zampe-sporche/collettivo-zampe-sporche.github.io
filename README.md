@@ -4,6 +4,7 @@
 
 - [ ] Inserire i link streaming per tutte le release disponibili:
   - Giù le zampe dal Collettivo
+  - Cattive abitudini
   - Country Life
   - La gatta che amava la synthwave
   - All Pawz On Me
