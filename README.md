@@ -2,7 +2,7 @@
 
 ## TO DO
 
-TOGLIERE "hidden" dall'index per ogni release.
+Per ogni nuova release aggiungere il "blocco" nel file esterno dedicato nella cartella del CZS
 
 - [ ] Inserire i link streaming per tutte le release disponibili:
   - Giù le zampe dal Collettivo
