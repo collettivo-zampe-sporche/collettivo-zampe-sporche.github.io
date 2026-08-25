@@ -5,7 +5,7 @@
 Per ogni nuova release aggiungere il "blocco" nel file esterno dedicato nella cartella del CZS
 
 - [ ] Inserire i link streaming per tutte le release disponibili:
-  - Giù le zampe dal Collettivo
+  
   - Cattive abitudini
   - Country Life
   - La gatta che amava la synthwave
